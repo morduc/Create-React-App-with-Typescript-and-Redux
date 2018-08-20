@@ -6,5 +6,5 @@ import TestReducer from '../_reducers/test.reducer';
 
 export default combineReducers({
     routing: routerReducer,
-    test: TestReducer,
+    testState: TestReducer,
 });

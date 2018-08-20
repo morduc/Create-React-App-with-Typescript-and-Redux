@@ -1,7 +1,8 @@
-export interface StoreState {
-    testState: TestState,
-}
+
 
 export interface TestState {
     test: string
+}
+export interface StoreState {
+    testState: TestState,
 }

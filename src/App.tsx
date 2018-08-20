@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 // custom imports
 import styled, { keyframes } from './styled-components';
 
-import { StoreState } from './_types/StoreStates'
+import { StoreState} from './_types/StoreStates'
 // file imports
 import logo from './logo.svg';
 
@@ -37,9 +37,10 @@ class App extends React.Component<Props, Object>{
 }
 
 
-export function mapStateToProps({testState}: StoreState): Props {
+export function mapStateToProps(state: StoreState): Props {
+
   return {
-    test: testState.test
+    test: state.testState.test
   }
 }
 
